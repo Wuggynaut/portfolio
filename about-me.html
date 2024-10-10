@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/1a99541075.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <a href="index.html"><img src="Emblem.png" alt="logo" class="logo"></a>
+        </div>
+        <div class="title-container">
+            <a href="index.html" class="subtle-link"><h1 class="title">Ari-Matti Toivonen</h1></a>
+        </div>
+        <!-- This button will trigger the dropdown menu to appear when clicked -->
+        <div class="hamburger-menu" onclick="toggleMenu()">
+            <img src="Burgermenu.png" alt="navigation menu button" class="menu-button">
+        </div>
+        <nav class="dropdown-menu">
+            <ul>
+                <!-- Portfolio Category (non-clickable, reveals nested items) -->
+                <li class="dropdown">
+                    <span class="category" onclick="toggleDropdown(this)">Portfolio <span class="indicator">▼</span></span>
+                    <ul class="dropdown-content">
+                        <li><a href="digital-painting.html">Digital Painting</a></li>
+                        <li><a href="lineart.html">Lineart</a></li>
+                        <li><a href="concept-art.html">Concept Art</a></li>
+                        <li><a href="cartography.html">Cartography</a></li>
+                    </ul>
+                </li>
+                <!-- Regular Links-->
+                <li><a href="rpg-products.html">RPG Products</a></li>
+                <li><a href="about-me.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <!-- Linking the JavaScript file -->
+        <script src="script.js"></script>
+    </header>
+        <img src="Line.png" class="header-line">
+    <main>
+        <div class="dark-container">
+            <img src="profile-image.png" alt="Picture of Ari-Matti Toivonen" class="about-image">
+            <div class="text-block-white">
+                <h2>About Me</h2>
+                <p>My name is Ari-Matti Toivonen, and I hail from the forests of Finland.<br>
+                    I am a freelance illustrator, concept artist and 2D game artist. I've worked with a broad variety of clients ranging from large companies such as The Teaching Company to small indie operations like SixtyGig Games.<br><br>
+                    
+                    I am deeply passionate about gaming and storytelling, and have been expressing that passion by making art as my full-time profession for nearly 10 years. I like to focus on evoking strong emotions through narrative, and exploring strong themes in my artwork.<br>
+                    My other passion is tabletop roleplaying games, where I put my passion for worldbuilding into practice by being an active Gamemaster. I also self-publish tabletop roleplaying books.<br><br>
+
+                    If you're looking for an artist for your project, don't be afraid to get in touch!
+                </p>
+                <div class="horizontal-center">
+                    <a href="contact.html" class="button">Contact me</a>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p class="footer-text">&copy; 2024 Ari-Matti Toivonen. All rights reserved.</p>
+        <div class="social-icons">
+            <a href="https://x.com/Wuggynaut" class="subtle-link"><i class="fa-brands fa-square-twitter fa-xl"></i></a>
+            <a href="https://wuggy.itch.io/" class="subtle-link"><i class="fa-brands fa-itch-io fa-xl"></i></a>
+            <a href="https://www.artstation.com/wuggy" class="subtle-link"><i class="fa-brands fa-artstation fa-xl"></i></a>
+            <a href="https://bsky.app/profile/wuggy.bsky.social" class="subtle-link"><i class="fa-brands fa-bluesky fa-xl"></i></a>
+            <a href="mailto:arimatti.toivonen@gmail.com" class="subtle-link"><i class="fa-solid fa-envelope fa-xl"></i></a>
+        </div>
+    </footer>
+</body>

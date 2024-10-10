@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/1a99541075.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <a href="index.html"><img src="Emblem.png" alt="logo" class="logo"></a>
+        </div>
+        <div class="title-container">
+            <a href="index.html" class="subtle-link"><h1 class="title">Ari-Matti Toivonen</h1></a>
+        </div>
+        <!-- This button will trigger the dropdown menu to appear when clicked -->
+        <div class="hamburger-menu" onclick="toggleMenu()">
+            <img src="Burgermenu.png" alt="navigation menu button" class="menu-button">
+        </div>
+        <nav class="dropdown-menu">
+            <ul>
+                <!-- Portfolio Category (non-clickable, reveals nested items) -->
+                <li class="dropdown">
+                    <span class="category" onclick="toggleDropdown(this)">Portfolio <span class="indicator">▼</span></span>
+                    <ul class="dropdown-content">
+                        <li><a href="digital-painting.html">Digital Painting</a></li>
+                        <li><a href="lineart.html">Lineart</a></li>
+                        <li><a href="concept-art.html">Concept Art</a></li>
+                        <li><a href="cartography.html">Cartography</a></li>
+                    </ul>
+                </li>
+                <!-- Regular Links-->
+                <li><a href="rpg-products.html">RPG Products</a></li>
+                <li><a href="about-me.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <!-- Linking the JavaScript file -->
+        <script src="script.js"></script>
+    </header>
+        <img src="Line.png" class="header-line">
+    <main>
+        <h2>Digital Painting</h2>
+        <div class="gallery-container">
+            <div class="gallery-item extra-wide-image"><img src="Digital-Painting/BeaconMill.png" alt="Artwork"></div>
+            <div class="gallery-item"><img src="Digital-Painting/Dragon.png" alt="Artwork"></div>
+            <div class="gallery-item"><img src="Digital-Painting/WetBoy_render1.png" alt="Artwork"></div>
+            <div class="gallery-item wide-image"><img src="Digital-Painting/Aurora.png" alt="Artwork"></div>
+            <div class="gallery-item wide-image"><img src="Digital-Painting/Cernunnos.png" alt="Artwork"></div>
+            <div class="gallery-item"><img src="Digital-Painting/Glaciering_v1.png" alt="Artwork"></div>
+            <div class="gallery-item extra-wide-image"><img src="Digital-Painting/Astral_V2.jpg" alt="Artwork"></div>
+            <div class="gallery-item"><img src="Digital-Painting/Kolder.png" alt="Artwork"></div>
+            <div class="gallery-item wide-image"><img src="Digital-Painting/Messenger.png" alt="Artwork"></div>
+            <div class="gallery-item"><img src="Digital-Painting/TBT.png" alt="Artwork"></div>
+            <div class="gallery-item"><img src="Digital-Painting/Newboy.png" alt="Artwork"></div>
+            <div class="gallery-item extra-wide-image"><img src="Digital-Painting/riverside.png" alt="Artwork"></div>
+            <div class="gallery-item extra-wide-image"><img src="Digital-Painting/Seacreature_png.png" alt="Artwork"></div>
+            <div class="gallery-item wide-image"><img src="Digital-Painting/shadowfell.png" alt="Artwork"></div>
+            <div class="gallery-item"><img src="Digital-Painting/Paincloak.png" alt="Artwork"></div>
+        </div>
+    </main>
+    <footer>
+        <p class="footer-text">&copy; 2024 Ari-Matti Toivonen. All rights reserved.</p>
+        <div class="social-icons">
+            <a href="https://x.com/Wuggynaut" class="subtle-link"><i class="fa-brands fa-square-twitter fa-xl"></i></a>
+            <a href="https://wuggy.itch.io/" class="subtle-link"><i class="fa-brands fa-itch-io fa-xl"></i></a>
+            <a href="https://www.artstation.com/wuggy" class="subtle-link"><i class="fa-brands fa-artstation fa-xl"></i></a>
+            <a href="https://bsky.app/profile/wuggy.bsky.social" class="subtle-link"><i class="fa-brands fa-bluesky fa-xl"></i></a>
+            <a href="mailto:arimatti.toivonen@gmail.com" class="subtle-link"><i class="fa-solid fa-envelope fa-xl"></i></a>
+        </div>
+    </footer>
+</body>

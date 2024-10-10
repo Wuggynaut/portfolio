@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/1a99541075.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <a href="index.html"><img src="Emblem.png" alt="logo" class="logo"></a>
+        </div>
+        <div class="title-container">
+            <a href="index.html" class="subtle-link"><h1 class="title">Ari-Matti Toivonen</h1></a>
+        </div>
+        <!-- This button will trigger the dropdown menu to appear when clicked -->
+        <div class="hamburger-menu" onclick="toggleMenu()">
+            <img src="Burgermenu.png" alt="navigation menu button" class="menu-button">
+        </div>
+        <nav class="dropdown-menu">
+            <ul>
+                <!-- Portfolio Category (non-clickable, reveals nested items) -->
+                <li class="dropdown">
+                    <span class="category" onclick="toggleDropdown(this)">Portfolio <span class="indicator">▼</span></span>
+                    <ul class="dropdown-content">
+                        <li><a href="digital-painting.html">Digital Painting</a></li>
+                        <li><a href="lineart.html">Lineart</a></li>
+                        <li><a href="concept-art.html">Concept Art</a></li>
+                        <li><a href="cartography.html">Cartography</a></li>
+                    </ul>
+                </li>
+                <!-- Regular Links-->
+                <li><a href="rpg-products.html">RPG Products</a></li>
+                <li><a href="about-me.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <!-- Linking the JavaScript file -->
+        <script src="script.js"></script>
+    </header>
+        <img src="Line.png" class="header-line">
+    <main>
+        <h2>RPG Products</h2>
+        <div class="dark-container">
+            <img src="PrintPromo1.png" alt="The Undermall zine" class="product-image">
+            <div class="text-block-white">
+                <h2>The Undermall</h2>
+                <p>
+                <div class="indented-text">
+                    <i>A venture orchestrated by the WhamHam Corporation, the Undermall was a failed attempt to expand their commercial interests downward, into the Underground. Whatever WhamHam hoped to achieve with the Undermall, the project soon proved to be completely unviable due to the unpredictable nature of the realm beneath. The mall complex was promptly abandoned by the company.
+                    <br><br>
+                    Nothing stays abandoned in the Underground for long, however.</i>
+                </div>
+                <br><br>
+                The Undermall is a compact mall-crawling and treasure-hunting location meant to be used with the system and setting of <b>Electric Bastionland</b> by <b>Chris McDowall</b> (<a href="https://www.bastionland.com/">www.bastionland.com</a>). It is a surreal, anachronistic location of an abandoned shopping mall that the Underground has given a strange life of its own. It is low-prep, and easy to drop into any Borough in Bastion. Meant primarily for one-shot adventures.
+                </p>
+
+                <div class="horizontal-center">
+                    <a href="contact.html" class="button">PDFs</a>
+                    <a href="contact.html" class="button">Print</a>
+                </div>
+            </div>
+        </div>
+        <div class="light-container">
+            <img src="relics-of-woe.png" alt="Relics of Woe" class="product-image">
+            <div class="text-block">
+                <h2>Relics of Woe</h2>
+                <p>
+                Relics of Woe is a supplement for fantasy RPGs containing 20 relic weapons, magical artifacts with weighty pasts.<br><br>
+
+                In this RPG supplement you will find:<br><br>
+                <ul style="padding-left: 20px;">
+                    <li><b>20 Unique, illustrated magic weapons.</b> Evocatively flavored, and easy to drop into most fantasy campaigns. </li>
+                    <li><b>Roleplay generators.</b> The weapons come with unique conditions for sustaining their powers, making the PCs perform rituals or having them undertake significant tasks. </li>
+                    <li><b>Two versions included.</b> There are versions for Cairn and Old-School Essentials. The weapons are easy to convert to most systems in the classic fantasy convention. </li>
+                    <li><b>Printable item cards.</b> For handing out to your players.</li>
+                </ul>
+                <br>
+                For use with <a href="https://cairnrpg.com/">Cairn</a> and <a href="https://necroticgnome.com/pages/about-old-school-essentials">Old-School Essentials</a>.
+                </p>
+
+                <div class="horizontal-center">
+                    <a href="contact.html" class="button">PDFs</a>
+                </div>
+            </div>
+        </div>
+        <div class="dark-container">
+            <img src="god-of-filth.png" alt="God of Filth pamphlet" class="product-image">
+            <div class="text-block-white">
+                <h2>Praise be, God of Filth!</h2>
+                <p>
+                <div class="indented-text">
+                    <i>A ruin has collapsed into the soft, rotten earth, and opened subterranean pathways to an ancient creature. Around the creature, a repellent cult has formed, and is now kidnapping travelers and townsfolk as human offerings their terrible god.</i>
+                </div>
+                <br><br>
+                Step into the hideous, muddy cult lair of the Children of the Unclean in this 2-page pamphlet adventure.<br><br>
+
+                <b>Warning:</b> contains extreme crimes against hygiene.<br><br>
+
+                For use with <a href="https://cairnrpg.com/">Cairn</a>.
+                </p>
+
+                <div class="horizontal-center">
+                    <a href="contact.html" class="button">PDFs</a>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p class="footer-text">&copy; 2024 Ari-Matti Toivonen. All rights reserved.</p>
+        <div class="social-icons">
+            <a href="https://x.com/Wuggynaut" class="subtle-link"><i class="fa-brands fa-square-twitter fa-xl"></i></a>
+            <a href="https://wuggy.itch.io/" class="subtle-link"><i class="fa-brands fa-itch-io fa-xl"></i></a>
+            <a href="https://www.artstation.com/wuggy" class="subtle-link"><i class="fa-brands fa-artstation fa-xl"></i></a>
+            <a href="https://bsky.app/profile/wuggy.bsky.social" class="subtle-link"><i class="fa-brands fa-bluesky fa-xl"></i></a>
+            <a href="mailto:arimatti.toivonen@gmail.com" class="subtle-link"><i class="fa-solid fa-envelope fa-xl"></i></a>
+        </div>
+    </footer>
+</body>

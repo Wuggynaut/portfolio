@@ -1,0 +1,471 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+
+    body {
+        font-family: Roboto, sans-serif;
+        min-height: 100vh;
+        justify-content: center;
+        align-items: center;
+        background-color: #f0f0f0;
+    }
+
+    a {
+        color: #bd1f25;
+        font-weight: bold;
+    }
+
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-right: 60px;
+        padding-left: 10px;
+        margin-top: 25px;
+    }
+
+    .logo-container {
+        margin-right: 10px;
+    }
+
+    .logo {
+        height: 80px;
+    }
+
+    .title-container {
+        display: flex;
+        justify-content: center;
+    }
+
+    .title {
+        font-size: 40px;
+        font-family: Indira K;
+        color: #1a1414;
+        margin: 0;
+    }
+
+    /* Removes link styling */
+    .subtle-link {
+        text-decoration: none; 
+        color: inherit; /* Inherits color from parent */
+    }
+
+    img.logo {
+        max-height: 150px;
+        vertical-align: sub;
+    }
+
+    .header-line {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 90%;
+        height: 5px;
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+
+    footer {
+        padding: 10px;
+        align-items: center;
+    }
+
+    .footer-text {
+        text-align: center;
+        font-size: 10px;
+        font-family: Roboto;
+        color: #1a1414;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .social-icons {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    h2 {
+        text-align: center;
+        font-size: 30px;
+        color: #1a1414;
+        font-family: Indira K;
+        margin-bottom: 20px;
+    }
+
+    .horizontal-center {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 25px;
+    }
+
+    .button {
+        background-color: #bd1f25;
+        border: none;
+        color: #f0f0f0;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        font-family: Roboto;
+        font-weight: bold;
+        cursor: pointer;
+        margin-top: 25px;
+        transition-duration: 0.5s ease;
+    }
+
+    .button:hover {
+        background-color: #881c1f;
+    }
+
+    .light-text {
+        color: #f0f0f0;
+    }
+
+    .indented-text {
+        margin-left: 1.5em;
+        padding-left: 10px;
+        border-left: 3px solid #881c1f;
+    }
+
+    .contact-container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin-inline: auto;
+        align-items: center;
+        justify-content: center;
+        max-width: 500px; /* Maximum width for form */
+        padding: 20px;
+        background-color: #1a1414;
+    }
+
+    .contact-form input, .contact-form textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 20px;
+        border: 1px solid #f0f0f0;
+        border-radius: 2px;
+        font-size: 16px;
+        font-family: Roboto;
+    }
+
+    .contact-form textarea {
+        resize: none;
+        height: 200px;
+    }
+
+    .contact-form button {
+        padding: 12px;
+        margin-inline: auto;
+    }
+
+    .contact-info {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .dark-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+        gap: 10px; /* Between text block and image */
+        background-color: #1a1414;
+        max-width: fit-content;
+        min-width: 300px;
+        margin-top: 25px;
+        margin-bottom: 25px;
+        margin-inline: auto;
+    }
+    .light-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+        gap: 10px; /* Between text block and image */
+        background-color: #f0f0f0;
+        max-width: fit-content;
+        min-width: 300px;
+        margin-top: 25px;
+        margin-bottom: 25px;
+        margin-inline: auto;
+    }
+
+    .text-block-white {
+        max-width: 600px;
+        padding: 10px 0;
+        color: #f0f0f0;
+        padding: 10px;
+        width: 100%;
+    }
+
+    .text-block-white h2 {
+        margin-bottom: 25px;
+        color: #f0f0f0;
+        border-bottom: #f0f0f0 solid 2px;
+    }
+
+    .text-block-white p {
+        font-size: 16px;
+        font-family: Roboto;
+    }
+
+    .text-block {
+        max-width: 600px;
+        padding: 10px 0;
+        padding: 10px;
+        width: 100%;
+    }
+
+    .text-block h2 {
+        margin-bottom: 25px;
+        border-bottom: #1a1414 solid 2px;
+    }
+
+    .text-block p {
+        font-size: 16px;
+        font-family: Roboto;
+    }
+
+    .about-image {
+        max-width: 100%;
+        height: auto;
+        border-style: solid;
+        border-width: 2px;
+        border-color: #1a1414;
+        border-radius: 2px;
+    }
+
+    .product-image {
+        max-width: 100%;
+        height: auto;
+        border-style: solid;
+        border-width: 2px;
+        border-color: #1a1414;
+        border-radius: 2px;
+    }
+
+    .content-column {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .content-column a {
+        display: block;
+        width: 850px;
+        max-width: 80%;
+        margin: 10px auto;
+        text-align: center;
+    }
+
+    .content-column img {
+        width: 100%; /* Ensures the image takes up the full width of the link */
+        height: auto;
+        border-style: solid;
+        border-width: 2px;
+        border-color: #1a1414;
+        border-radius: 2px;
+    }
+
+    .hover-effect {
+        transition: 0.5s ease;
+    }
+
+    .hover-effect:hover{
+        background: linear-gradient(to bottom right, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5));
+        opacity: 0.9; /* Optional: Slight transparency */
+    }
+
+    /* Main container for the gallery */
+    .gallery-container {
+        display: grid; /* Using CSS Grid for layout */
+        grid-template-columns: repeat(3, 1fr); /* 3 equal columns by default */
+        gap: 16px; /* Space between items */
+        padding: 16px; /* Padding around the container */
+        max-width: 1000px;
+        margin: 10px auto;
+        grid-auto-flow: dense; /* Allows the grid to fill gaps efficiently */
+    }
+
+    .gallery-item {
+        position: relative; /* Absolute positioning */
+        display: flex; /* Flexbox ensures that the image will scale within its container */
+        justify-content: center;
+        align-items: center;
+        overflow: hidden; /* Ensures that no overflow occurs */
+    }
+
+    /* Other styles remain the same */
+    .gallery-item img {
+        width: 100%; /* Responsive images */
+        height: auto; /* Maintain aspect ratio */
+        object-fit: contain;
+    }
+
+    .wide-image {
+        grid-column: span 2;
+    }
+
+    .extra-wide-image {
+        grid-column: span 3;
+    }
+
+    .tall-image {
+        grid-row: span 2;
+    }
+
+    .large-image {
+        grid-row: span 2;
+        grid-column: span 2;
+    }
+
+    .hamburger-menu {
+        cursor: pointer;
+        position: absolute; /* Positioned relative to the viewport */
+        top: 20px;          
+        right: 20px;        
+        display: block;
+    }
+
+    .menu-button {
+        height: 35px;
+        width: auto;
+        margin: 6px 0;
+    }
+
+    /* Dropdown Menu Hidden by Default */
+    .dropdown-menu {
+        display: none; /* Initially hidden */
+        background-color: #1a1414;
+        position: absolute;
+        z-index: 10;
+        top: 65px; /* Positioned below the hamburger menu */
+        right: 20px; /* Align with the right edge */
+        width: 300px;
+        border-radius: 2px;
+    }
+
+    /* List Styling */
+    .dropdown-menu ul {
+        list-style-type: none;
+        padding: 0;
+
+    }
+
+    .dropdown-menu li {
+        display: block;
+        padding: 12px;
+        font-family: Roboto;
+        font-weight: bold;
+        font-size: 18px;
+        width: 100%;
+    }
+    
+    /* Categories styling */
+    .category {
+        display: block;
+        color: #bd1f25;
+        cursor: pointer;
+        width: 100%;
+        padding: 12px; /* Add padding to anchor for better spacing */
+    }
+
+    .category:hover {
+        background-color: #bd1f25;
+        color: #1a1414;
+    }
+
+    .dropdown.open .indicator {
+        transform: rotate(180deg);
+    }
+
+    .indicator {
+        display: inline-block;
+        transition: transform 0.3 ease;
+    }
+
+    /* Nested Dropdown (initially hidden) */
+    .dropdown-content {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.2s ease-out; /* Smooth transition */
+    }
+
+    /* Links Styling */
+    .dropdown-menu a {
+        color: #f0f0f0;
+        text-decoration: none;
+        font-weight: normal;
+        width: 100%; /* Make anchor fill the entire <li> */
+        display: block; /* Ensures the clickable area covers the full width */
+        padding: 12px; /* Add padding to anchor for better spacing */
+    }
+
+    .dropdown-menu a:hover {
+        background-color: #bd1f25;
+    }
+
+    /* Active state when showing the nested dropdown */
+    .dropdown-content.active {
+        max-height: 400px; /* Adjust this value based on the height of your content */
+    }
+    
+    /* Media queries */
+    @media (max-width: 1024px) {
+        .gallery-container {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        .wide-image {
+            grid-column: span 2; /* Keep it spanning 2 columns on medium screens */
+        }
+        .extra-wide-image {
+            grid-column: span 2;
+        }
+        .large-image {
+            grid-row: span 2;
+            grid-column: span 2;
+        }
+    }
+
+    @media (max-width: 768px) {
+        .dark-container {
+            flex-direction: column; /* Stack elements on mobile */
+            align-items: center;
+        }
+
+        .light-container {
+            flex-direction: column; /* Stack elements on mobile */
+            align-items: center;
+        }
+        
+        header {
+            position: relative;
+            padding-right: auto;
+            padding-left: 10px;
+        }
+        .gallery-container {
+            grid-template-columns: 1fr;
+        }
+
+        .wide-image {
+            grid-column: auto; /* Reset to default on small screens */
+        }
+        .extra-wide-image {
+            grid-column: auto;
+        }
+        .large-image {
+            grid-column: auto;
+            grid-row: auto;
+        }
+    }
+
+    
